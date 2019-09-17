@@ -1,0 +1,18 @@
+name: 'Private docker repository'
+description: 'Use Docker images from private repositories'
+author: 'ibiqlik'
+
+inputs:
+  username:
+    description: 'Docker username'
+    required: false
+  password:
+    description: 'Docker password'
+    required: false
+  docker_url:
+    description: 'Docker Repo URL'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
