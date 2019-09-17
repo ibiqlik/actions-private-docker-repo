@@ -12,6 +12,13 @@ inputs:
   docker_url:
     description: 'Docker Repo URL'
     required: true
+  image:
+    description: 'Docker image name'
+    required: true
+  tag:
+    description: 'Docker image tag'
+    required: false
+    default: 'latest'
 
 runs:
   using: 'docker'
